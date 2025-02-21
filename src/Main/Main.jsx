@@ -20,7 +20,16 @@ function Main() {
             <Article imageSrc={img3} alt="Technologie évolutive" title="Les technologies évoluent rapidement, et ça me garde à l'affût." desc="Le secteur est en constante évolution, ce qui me pousse à apprendre et à rester à jour avec les
                     nouvelles tendances." />
 
+            {[
+                { imageSrc: null, alt: 'Image 1', title: 'Blablabla', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+                { imageSrc: 'img1', alt: 'Innovations technologiques', title: 'Tech Innovations', desc: 'Les nouvelles technologies transforment le monde des affaires.' },
+                { imageSrc: 'img2', alt: 'Révolution de l\'IA', title: 'AI Revolution', desc: 'L\'intelligence artificielle modifie la façon dont nous interagissons avec le monde.' }
+            ].map(obj => {
+                return <Article imageSrc={obj.imageSrc} alt={obj.alt} title={obj.title} desc={obj.desc} />
+            })}
 
+            {[1,2,2,3].map(num => { return <h4>{num**2}</h4>} )}
+            
         </main>
     );
 
