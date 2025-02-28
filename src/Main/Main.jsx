@@ -27,8 +27,6 @@ function Main() {
             ].map(obj => {
                 return <Article imageSrc={obj.imageSrc} alt={obj.alt} title={obj.title} desc={obj.desc} />
             })}
-
-            {[1,2,2,3].map(num => { return <h4>{num**2}</h4>} )}
             
         </main>
     );
